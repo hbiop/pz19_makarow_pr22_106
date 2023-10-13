@@ -61,4 +61,9 @@ public class MainActivity extends AppCompatActivity {
             setInitialDateTime();
         }
     };
+    public void showDialog(View v) {
+
+        CustomDialogFragment dialog = new CustomDialogFragment();
+        dialog.show(getSupportFragmentManager(), "custom");
+    }
 }
